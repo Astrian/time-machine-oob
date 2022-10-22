@@ -11,4 +11,4 @@ services:
       - ./timemachine_backup:/timemachine_backup
     ports:
       - 548:548
-      - 5353:5353/udp
+      - 5353:5353
