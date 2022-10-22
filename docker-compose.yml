@@ -7,6 +7,13 @@ services:
     container_name: time-machine
     restart: unless-stopped
     network_mode: host
+    environment:
+      - TM_USERNAME=timemachine
+      - TM_UID=1000
+      - TM_GID=1000
+      - TM_PASSWORD=timemachine
+      - TM_SHARENAME=TimeMachine
+      - TM_VOL_LIMIT=0
     volumes:
       - ./timemachine_backup:/timemachine_backup
     ports:
