@@ -25,7 +25,7 @@ You can customize the configuration by editing the `docker-compose.yml` file. Cl
 | TM_UID | Time Machine volume owner UID | 1000 |
 | TM_GID | Time Machine volume owner GID | 1000 |
 | TM_SHARENAME | Time Machine volume name, will be shown in your Time Machine preference | TimeMachine |
-| TM_SIZE | Volume size limit,  | 0 (limited to your physical size) |
+| TM_SIZE | Volume size limit, with megabytes | 0 (limited to your physical size) |
 
 Also, you can change the `volumes` section to export your backup image. The default volume is mounted to the `./timemachine_backup` directory.
 
