@@ -1,0 +1,14 @@
+---
+version: "3.7"
+
+services:
+  time_machine:
+    image: astrian/time-machine-oob
+    container_name: time-machine
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./timemachine_backup:/timemachine_backup
+    ports:
+      - 548:548
+      - 5353:5353/udp
