@@ -30,4 +30,6 @@ You can customize the configuration by editing the `docker-compose.yml` file. Cl
 Also, you can change the `volumes` section to export your backup image. The default volume is mounted to the `./timemachine_backup` directory.
 
 ## Special Architecture
-If you want to run the container on a machine with a non-AMD64 architecture, you need to compile the container yourself. The `dockerfile` is available in the repository.
+If your target machine is in ARM64 architecture, you can use the `arm64-latest` tag. Just copy the `docker-compose-sample.yml` file, change the `image` value to `astrian/time-machine-oob:arm64-latest`, and run `docker-compose up -d`.
+
+You must compile the container yourself if you want to run the container on a machine with a non-AMD64 and non-ARM64 architecture. The `dockerfile` is available in the repository.
